@@ -1,0 +1,43 @@
+Yes_answer = ["Yes","Y","yes","y"]
+No_answer = ["No","N","no","n"]
+
+print("""
+WELCOME! LET'S START THE ADVENTURE
+
+You are standing outside of your house and you see a person running towards you and asking for food.
+
+Will you provide food to him/her . (Yes / No)
+""")
+
+answer_1 = input(">>")
+
+if answer_1 in Yes_answer:
+    print("\nAfter 2 minutes, the cops came to your house, and ask you that whether that person is in your house or not. Will you say (Yes / No)\n")
+
+    answer_2 = input(">>")
+
+    if answer_2 in Yes_answer:
+        print("\nYou are an honest person. He/she was a criminal & You won the Game")
+
+    elif answer_2 in No_answer:
+        print("\nYou helped a criminal. Now, go to Jail. GAME OVER! come back later")
+
+    else:
+        print("\nYou typed the wrong input. GOODBYE! Come back later")
+
+elif answer_1 in No_answer:
+    print("\nNow, he/she is trying to kill you and will take all your money and property. Will, you knock him down? (Yes / No)\n")
+
+    answer_3 = input(">>")
+
+    if answer_3 in Yes_answer:
+        print("\nCongrats! He was a criminal & You helped the cops to catch him with your bravery.")
+
+    elif answer_3 in No_answer:
+        print("\nSorry! You are dead. He was a criminal & He killed you. GAME OVER! come back later")
+
+    else:
+        print("\nYou typed the wrong input. GOODBYE! come back later")
+
+else:
+    print("\nYou typed the wrong input. GOODBYE! come back later")
